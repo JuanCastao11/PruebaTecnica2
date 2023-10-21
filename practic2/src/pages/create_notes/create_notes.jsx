@@ -1,6 +1,8 @@
 import React from 'react'
 import "./create_notes.css"
 
+
+
 function Create_notes() {
   return (
     <>

@@ -3,6 +3,7 @@ import Notes from '../models/notes.models.js'
 export const getNote = async (req, res) => {
     try {
         const notes = await Notes.find();
+        console.log(notes)
         const today = new Date(); 
         const notesWithTimeElapsed = notes.map((note) => {
             const createdDate = new Date(note.date);
@@ -28,12 +29,13 @@ export const getNote = async (req, res) => {
 export const createNote = async (req, res) => {
 
     try {
-        const { title, info, name, date } = req.body;
+        console.log(req.body)
+        const { rol,title, content, date } = req.body;
 
         const newNote = new Notes({
+            rol,
             title,
-            name,
-            info,
+            content,
             date
         });
         const saveNote = await newNote.save();

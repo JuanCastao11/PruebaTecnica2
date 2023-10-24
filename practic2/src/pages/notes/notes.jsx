@@ -14,11 +14,11 @@ function Notes() {
     .then(data => setNotes(data))
     .catch (error => console.error(error))
     console.log(notes)
-  })
+  },[])
   
 
   return (
-    <div className=' flex  justify-center '>
+    <div className=' flex  justify-center'>
      {notes.map(nota => (
        <CardNotes 
        key={nota._id}

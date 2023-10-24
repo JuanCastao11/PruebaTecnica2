@@ -49,6 +49,8 @@ function Create_notes() {
     setDate(event.target.value) 
   };
   console.log(date)
+
+
   
   return (
 
@@ -67,7 +69,7 @@ function Create_notes() {
         <input type="date" name='fecha' placeholder='' id='' value={date} className='  w-[30%] border-2 outline-0 h-[40px] rounded-md' onChange={handleChangeDate} />
         </div>
         <div className="button flex  w-full ml-8">
-        <button type="submit" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br 
+        <button  type="submit" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br 
          font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-26 ">Save</button>
         </div>
         </form>

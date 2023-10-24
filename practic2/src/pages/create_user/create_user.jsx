@@ -34,12 +34,12 @@ function Create_user() {
     .then(data => setUsernameGet(data))
     .catch (error => console.error(error))
     console.log(userNameGet)
-  })
+  },[]);
 
   return (
     <>
     <div className="conten w-full flex justify-between ">
-      <div className="cont2 w-[25%]  bg-white m-5">
+      <div className="cont2 w-[25%] h-[30vh] bg-white m-5">
       <h1 className=' m-10 font-bold text-[1.4rem] '>Create a Note</h1>
       <form action="" className='  m-10 flex flex-col  gap-3 justify-start ' onSubmit={handleSubmit}>
         <input type="text" name='user' placeholder='User' id='' value={userName} className='  w-full border-2 outline-0 h-[40px] rounded-md' onChange={handleChange} />

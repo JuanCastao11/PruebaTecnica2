@@ -14,7 +14,7 @@ function Notes() {
     .then(data => setNotes(data))
     .catch (error => console.error(error))
     console.log(notes)
-  },[])
+  },[notes])
   
 
   return (

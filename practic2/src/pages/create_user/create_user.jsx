@@ -34,7 +34,7 @@ function Create_user() {
     .then(data => setUsernameGet(data))
     .catch (error => console.error(error))
     console.log(userNameGet)
-  },[]);
+  },[userNameGet]);
 
   return (
     <>

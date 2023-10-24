@@ -1,6 +1,6 @@
 import React from 'react'
 import "./create_notes.css"
-
+import { NavLink } from 'react-router-dom'
 
 
 function Create_notes() {
@@ -29,6 +29,7 @@ function Create_notes() {
     setTitle("")
     setContent("")
     setDate("")
+    window.location.href = "http://localhost:5173/"
   }
   const handleChange = (event) => {
     setRol(event.target.value);
